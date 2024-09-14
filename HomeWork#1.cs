@@ -42,6 +42,7 @@ for(int i = 0; i < patten; i++)
 
 }
 
+Console.WriteLine();
 int k = 1;
 for(int i = 0; i < patten; i++)
 {
@@ -55,4 +56,30 @@ for(int i = 0; i < patten; i++)
     }
     Console.WriteLine();
     k += 2;
+}
+
+Console.WriteLine();
+for(int i =0; i <= patten; i += 2)
+{
+    for(int j = 0; j<= patten-3-i; j+=2)
+    {
+        Console.Write(" ");
+    }
+    for(int n =0; n <=i; n++)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
+}
+for(int i=0; i < patten-1; i+=2)
+{
+    for(int j=0; j <= i; j+=2)
+    {
+        Console.Write(" ");
+    }
+    for(int n =0; n < patten-2-i; n++)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
 }
