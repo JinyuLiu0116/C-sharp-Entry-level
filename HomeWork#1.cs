@@ -30,3 +30,15 @@ Console.WriteLine("-----------------------------------------------------");
 
 Console.ResetColor();
 
+int patten = 9;
+
+for(int i = 0; i < patten; i++)
+{
+    for (int j = 0; j< patten; j++)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
+
+}
+
