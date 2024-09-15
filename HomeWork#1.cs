@@ -55,7 +55,7 @@ Console.WriteLine();
 int k = 1;
 for(int i = 0; i < patten; i++)
 {
-    for(int j = 0;j<= patten-i; j++)
+    for(int j = 0;j<= patten-2-i; j++)
     {
         Console.Write(" ");
     }
