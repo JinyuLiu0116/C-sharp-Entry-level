@@ -19,7 +19,7 @@ namespace execrise
         static void DisplayInfo(StudentApp aStudent)
         {
             Console.WriteLine($"Name: {aStudent.ReturnFullName()}");
-            Console.WriteLine($"Major: {aStudent.getMajor()}");
+            Console.WriteLine($"Major: {aStudent.getMajor}");
         }
     }
 }
