@@ -46,26 +46,26 @@ namespace execrise
             setLasttName(last);
             setMajor(focus);
         }
-        public string getFirstName() { return this.firstName; }
-        public string getLastName() { return this.lastName; }
-        public string getStudentNum() { return this.studentNum; }
-        public string getClassification() { return this.classification; }
-        public string getMajor() { return this.major; }
-        public void setFirstName(string firstName) { this.firstName = firstName; }
-        public void setLasttName(string lastName) { this.lastName = lastName; }
-        public void setStudentNum(string studentNum) { this.studentNum = studentNum; }
-        public void setClassification(string classification) { this.classification = classification; }
-        public void setMajor(string major) { this.major = major; }
+        public string getFirstName { get{return this.firstName;} }
+        public string getLastName { get{return this.lastName;} }
+        public string getStudentNum { get{return this.studentNum;} }
+        public string getClassification { get{return this.classification;} }
+        public string getMajor { get{return this.major;} }
+        public void setFirstName(in string firstName) { this.firstName = firstName; }
+        public void setLasttName(in string lastName) { this.lastName = lastName; }
+        public void setStudentNum(in string studentNum) { this.studentNum = studentNum; }
+        public void setClassification(in string classification) { this.classification = classification; }
+        public void setMajor(in string major) { this.major = major; }
         public string ReturnFullName()
         {
-            return getFirstName() + " " + getLastName();
+            return getFirstName + " " + getLastName;
         }
         public override string ToString()
         {
-            return "Student Number: " + getStudentNum() +
+            return "Student Number: " + getStudentNum +
                 "\nName: " + ReturnFullName() +
-                "\nClassification: " + getClassification() +
-                "\nMajor: " + getMajor();
+                "\nClassification: " + getClassification +
+                "\nMajor: " + getMajor;
         }
     }
 }
