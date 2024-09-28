@@ -18,8 +18,8 @@ namespace HW2Q9
             double weightInPounds = weightInGrams * gramToPound;
             double totalPriceOfProductOne = productOnePerHGrams * weightInGrams;
             double totalPriceOfProductTwo = productTwoPerHGrams * weightInGrams;
-            double productOnePerHPounds = totalPriceOfProductOne / weightInPounds;
-            double productTwoPerHPounds = totalPriceOfProductTwo / weightInPounds;
+            double productOnePerHPounds = (totalPriceOfProductOne / weightInPounds) / 100;
+            double productTwoPerHPounds = (totalPriceOfProductTwo / weightInPounds) / 100;
 
             Console.WriteLine("Product name: ----------- " + product1);
             Console.WriteLine("Price per 100 Grams: --- $" + productOnePerHGrams);
