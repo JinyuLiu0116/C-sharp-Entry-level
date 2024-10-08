@@ -6,13 +6,6 @@ using System.Threading.Tasks;
 
 namespace HW_Student_class
 {
-    /*
-Create a class representing a student. Include characteristics such as
-student number, first and last name, classification, and major. Write at
-least two constructors. Include properties for each of the data items except Major which should have old-fashion getter/setter.
-Include an instance method that returns a full name (with a space
-between first and last name).
-     */
     internal class Program
     {
         internal class Student
