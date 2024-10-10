@@ -15,22 +15,19 @@ namespace HW_Student_class
             private string classification;
             private string major;
             
-            public Student()
-            {
+            public Student(){
                 setFirstName("Unknown");
                 setLastName("Unknown");
                 setClassification("Unknown");
                 setMajor("Unknown");
             }
-            public Student(string firstName, string lastName)
-            {
+            public Student(string firstName, string lastName){
                 setFirstName(firstName);
                 setLastName(lastName);
                 setClassification("Unknown");
                 setMajor("Unknown");
             }
-            public Student(string firstName, string lastName, string classification, string major)
-            {
+            public Student(string firstName, string lastName, string classification, string major){
                 setFirstName(firstName);
                 setLastName(lastName);
                 setClassification(classification);
@@ -44,46 +41,39 @@ namespace HW_Student_class
                 if (string.IsNullOrEmpty(firstName)){
                     throw new ArgumentNullException("Empty input");
                 }
-                else if (!firstName.All(char.IsLetter))
-                {
+                else if (!firstName.All(char.IsLetter)){
                     throw new ArgumentException("Invalid input charactor");
                 }
                 this.firstName = firstName;
             }
-            public void setLastName(string lastName)
-            {
-                if (string.IsNullOrEmpty(lastName))
-                {
+            public void setLastName(string lastName){
+                if (string.IsNullOrEmpty(lastName)){
                     throw new ArgumentNullException("Empty input");
                 }
-                else if (!lastName.All(char.IsLetter))
-                {
+                else if (!lastName.All(char.IsLetter)){
                     throw new ArgumentException("Invalid input charactor");
                 }
                 this.lastName = lastName;
             }
-            public void setClassification(string classification)
-            {
-                if (string.IsNullOrEmpty(classification))
-                {
+            public void setClassification(string classification){
+                if (string.IsNullOrEmpty(classification)){
                     throw new ArgumentNullException("Empty input");
                 }
                 this.classification = classification;
             }
-            public void setMajor(string major)
-            {
-                if (string.IsNullOrEmpty(major))
-                {
+            public void setMajor(string major){
+                if (string.IsNullOrEmpty(major)){
                     throw new ArgumentNullException("Empty input");
                 }
                 this.major = major;
             }
-            public string getFullName() { return this.getFirstName()+' '+this.getFirstName(); }
+            public string getFullName() { 
+                return this.getFirstName()+' '+this.getFirstName(); 
+            }
         }
         static void Main(string[] args)
         {
-            try
-            {
+            try{
                 Student test = new Student();
                 Student student1 = new Student("Jinyu", "Liu");
                 Student student2 = new Student("JoJo", "Johnan", "Undergradute", "Computer Science");
@@ -102,16 +92,13 @@ namespace HW_Student_class
             catch(ArgumentNullException e) {
                 Console.WriteLine("Exception: " + e.Message);
             }
-            catch(ArgumentException e)
-            {
+            catch(ArgumentException e){
                 Console.WriteLine("Exception: " + e.Message);
             }
-            catch(Exception e)
-            {
+            catch(Exception e){
                 Console.WriteLine("Exception: " + e.Message);
             }
-            finally
-            {
+            finally{
                 Console.WriteLine("Auto massage: Code has been executed");
             }
             Console.ReadKey();
