@@ -12,9 +12,9 @@ namespace HW2
         {
             double dMiles;
             double dKilometers;
-            const double converToKilometers = 1.609344;
+            const double CONVER_TO_KILMOETERS = 1.609344;
             int iFeet;
-            const int converToFeet = 5280;
+            const int  CONVER_TO_FEET = 5280;
             while (true)
             {
                 string userInput;
