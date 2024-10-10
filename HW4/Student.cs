@@ -21,13 +21,13 @@ namespace HW_Student_class
                 setClassification("Unknown");
                 setMajor("Unknown");
             }
-            public Student(string firstName, string lastName){
+            public Student(in string firstName, in string lastName){
                 setFirstName(firstName);
                 setLastName(lastName);
                 setClassification("Unknown");
                 setMajor("Unknown");
             }
-            public Student(string firstName, string lastName, string classification, string major){
+            public Student(in string firstName, in string lastName, in string classification, in string major){
                 setFirstName(firstName);
                 setLastName(lastName);
                 setClassification(classification);
@@ -37,7 +37,7 @@ namespace HW_Student_class
             public string getLastName() {return this.lastName;}
             public string getClassification() {return this.classification;}
             public string getMajor() {return this.major;}
-            public void setFirstName(string firstName){
+            public void setFirstName(in string firstName){
                 if (string.IsNullOrEmpty(firstName)){
                     throw new ArgumentNullException("Empty input");
                 }
@@ -46,7 +46,7 @@ namespace HW_Student_class
                 }
                 this.firstName = firstName;
             }
-            public void setLastName(string lastName){
+            public void setLastName(in string lastName){
                 if (string.IsNullOrEmpty(lastName)){
                     throw new ArgumentNullException("Empty input");
                 }
@@ -55,13 +55,13 @@ namespace HW_Student_class
                 }
                 this.lastName = lastName;
             }
-            public void setClassification(string classification){
+            public void setClassification(in string classification){
                 if (string.IsNullOrEmpty(classification)){
                     throw new ArgumentNullException("Empty input");
                 }
                 this.classification = classification;
             }
-            public void setMajor(string major){
+            public void setMajor(in string major){
                 if (string.IsNullOrEmpty(major)){
                     throw new ArgumentNullException("Empty input");
                 }
