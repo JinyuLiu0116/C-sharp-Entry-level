@@ -10,19 +10,19 @@ namespace HW3
     {
         static void Main(string[] args)
         {
-            const double taxRate = 0.07;
-            const double tipRateLess = 0.1;
-            const double tipRateMore = 0.2;
+            const double TAX_RATE = 0.07;
+            const double TIP_RATE_LESS = 0.1;
+            const double TIP_RATE_MORE = 0.2;
             double subTotal = Math.Round(userInput(), 2);
-            double tax = Math.Round(subTotal * taxRate, 2);
+            double tax = Math.Round(subTotal * TAX_RATE, 2);
             double total = subTotal + tax;
-            double tipLess = Math.Round(total * tipRateLess, 2);
-            double tipMore = Math.Round(total * tipRateMore, 2);
+            double tipLess = Math.Round(total * TIP_RATE_LESS, 2);
+            double tipMore = Math.Round(total * TIP_RATE_MORE, 2);
             double totalLess = total + tipLess;
             double totalMore = total + tipMore;
 
             Console.WriteLine($"Subtotal: ${subTotal}");
-            Console.WriteLine($"Tax rate:  {taxRate*100}%");
+            Console.WriteLine($"Tax rate:  {TAX_RATE*100}%");
             Console.WriteLine($"Total:    ${total}");
             Console.WriteLine($"Tip(10%): ${tipLess}");
             Console.WriteLine($"Total:    ${totalLess}");
