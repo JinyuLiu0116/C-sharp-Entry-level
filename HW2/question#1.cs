@@ -13,7 +13,7 @@ namespace HW2
             string userInput;
             int tempInCelsius;
             int tempInFahrenheit;
-            const int BaseValue = 32;
+            const int BASE_VALUE = 32;
 
            
             while(true)
