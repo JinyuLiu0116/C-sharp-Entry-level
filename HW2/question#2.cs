@@ -35,8 +35,8 @@ namespace HW2
                 }
                 else
                 {
-                    dKilometers = Math.Round(dMiles * converToKilometers, 2);
-                    iFeet = (int)Math.Round(dMiles * converToFeet);
+                    dKilometers = Math.Round(dMiles * CONVER_TO_KILMOETERS, 2);
+                    iFeet = (int)Math.Round(dMiles * CONVER_TO_FEET);
 
                     Console.WriteLine("Miles: " + Math.Round(dMiles, 2));
                     Console.WriteLine("Kilometers: " + dKilometers);
