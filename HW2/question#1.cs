@@ -35,7 +35,7 @@ namespace HW2
                     break;
                 }
             }
-            double covertion = tempInCelsius * (9.0 / 5) + BaseValue;
+            double covertion = tempInCelsius * (9.0 / 5) + BASE_VALUE;
             covertion = Math.Round(covertion);
             tempInFahrenheit = (int)covertion;
             Console.WriteLine("Temperature in Celsius: " + tempInCelsius + " degree");
