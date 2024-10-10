@@ -25,7 +25,7 @@ namespace execrise
         }
 
         // Constructor used to create Student object
-        public StudentApp(string num, string first, string last, string year, string focus)
+        public StudentApp(in string num, in string first, in string last, in string year, in string focus)
         {
             setStudentNum(num);
             setFirstName(first);
@@ -34,13 +34,13 @@ namespace execrise
             setMajor(focus);
         }
 
-        public StudentApp(string first, string last)
+        public StudentApp(in string first, in string last)
         {
             setFirstName(first);
             setLasttName(last);
         }
 
-        public StudentApp(string first, string last, string focus)
+        public StudentApp(in string first, in string last, in string focus)
         {
             setFirstName(first);
             setLasttName(last);
