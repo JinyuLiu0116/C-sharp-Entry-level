@@ -19,6 +19,12 @@ namespace classAssignment_2
             for(int i = 0; i < arrOfNum.Length; i++){
                 arrOfNum[i] = rand.Next(1,100);
             }
+
+            foreach(int it in arrOfNum){
+                Console.write("{0} ", it);
+            }
+            Console.WriteLine
+            
         }
         
     }
