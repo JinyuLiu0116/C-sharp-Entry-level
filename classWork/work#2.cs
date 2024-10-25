@@ -21,10 +21,17 @@ namespace classAssignment_2
             }
 
             foreach(int it in arrOfNum){
-                Console.write("{0} ", it);
+                Console.Write("{0} ", it);
             }
-            Console.WriteLine
+            Console.WriteLine();
+
+            arrOfNum.Sort();
+
+            foreach(int it in arrOfNum){
+                Console.Write("{0} ", it);
+            }
             
+            Console.ReadKey();
         }
         
     }
