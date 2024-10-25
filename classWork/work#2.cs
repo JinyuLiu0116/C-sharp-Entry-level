@@ -11,42 +11,14 @@ namespace classAssignment_2
     {
         static void Main(string[] args)
         {
-            int senNum = -99;
-            int sum=0;
-            int averageTem;
-            int numOfInput = 0;
-            while (true)
-            {
-                string input;
-                int userInputNum;
-                Console.Write("Please enter temputer:");
-                input = Console.ReadLine();
-                //if (string.IsNullOrEmpty(input))
-                //{
-                //    continue;
-                //}
-                //else if (!int.TryParse(input, out userInputNum))
-                //{
-                //    continue;
-                //}
-                //else
-                //{
-                userInputNum = int.Parse(input);
-                if (userInputNum != senNum)
-                {
-                    sum += userInputNum;
-                    numOfInput++;
-                    continue;
-                }
-                else
-                    break;
-                //}
+            int[] arrOfNum;
+            arrOfNum = new int[10];
+
+            Random rand = new Random;
+
+            for(int i = 0; i < arrOfNum.Length; i++){
+                arrOfNum[i] = rand.Next(1,100);
             }
-            averageTem = (sum + senNum) / numOfInput;
-            Console.WriteLine("Average temputer:" + averageTem);
-            Console.ReadKey();
-
-
         }
         
     }
