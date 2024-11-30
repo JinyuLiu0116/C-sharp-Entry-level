@@ -11,7 +11,7 @@ Console.WriteLine("**     Developer: Jinyu Liu                      **");
 Console.WriteLine("**     Date Submitted: September 12              **");
 Console.WriteLine("**     Purpose: Provide internal documentation   **");
 Console.WriteLine("***************************************************");
-
+Console.WriteLine("-----------------------------------------------------");
 Console.ResetColor();
 
 Console.BackgroundColor = ConsoleColor.White;
