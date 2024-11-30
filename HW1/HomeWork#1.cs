@@ -30,7 +30,7 @@ Console.WriteLine("-----------------------------------------------------");
 Console.ResetColor();
 
 Console.WriteLine("Out put #1:");
-Console.WriteLine("Laugh often, Dream big, Reach for the stars!");
+
 Console.WriteLine();
 Console.WriteLine("Out put #2:");
 Console.WriteLine("Laugh often, \nDream big, \nReach for the stars!");
